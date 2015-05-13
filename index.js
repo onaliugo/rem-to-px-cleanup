@@ -30,10 +30,6 @@ var Converter = function (userOpts) {
       declarationsArr.push('\n' + declaration);
     });
 
-    declarationsArr = declarationsArr.filter(function (declaration) {
-      return declaration;
-    });
-
     if (declarationsArr.length)
       return $2 + declarationsArr.join('') + '\n' + $4;
 
