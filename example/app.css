@@ -1,0 +1,13 @@
+html {
+  font-size: 93.75%;
+}
+
+.Block {
+  width: 50%;
+  margin: 0 auto;
+  padding: 1rem .5rem;
+}
+
+.Block--modifier {
+  padding: 3rem;
+}

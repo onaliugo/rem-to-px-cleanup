@@ -1,0 +1,24 @@
+{
+  "name": "rem-to-px-cleanup",
+  "version": "0.1.0",
+  "description": "Generate a CSS file only with REM units converted into PX",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/onaliugo/rem-to-px-cleanup"
+  },
+  "keywords": [
+    "css",
+    "rem",
+    "px"
+  ],
+  "author": "Ugo Onali",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/onaliugo/rem-to-px-cleanup/issues"
+  },
+  "homepage": "https://github.com/onaliugo/rem-to-px-cleanup",
+  "dependencies": {
+    "uo-node-utils": "^0.1.1"
+  }
+}
