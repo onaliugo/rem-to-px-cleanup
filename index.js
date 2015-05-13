@@ -8,6 +8,7 @@ var Converter = function (userOpts) {
   };
 
   this.opts = {
+    trim: userOpts.trim || false,
     silent: userOpts.silent || false,
     baseFontSize: userOpts.baseFontSize || 16
   };
@@ -39,8 +40,12 @@ var Converter = function (userOpts) {
     return '';
   });
 
+  if (this.opts.trim)
+    cssBlocks = Utils.trim(cssBlocks);
+
   Utils.create.file(userOpts.cssFile.replace('.css', '-ie.css'), cssBlocks);
 };
+
 
 
 Converter.prototype.toPx = function (str) {
@@ -51,5 +56,7 @@ Converter.prototype.toPx = function (str) {
     return unitValue + 'px';
   });
 };
+
+
 
 module.exports = Converter;
