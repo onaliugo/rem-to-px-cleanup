@@ -1,7 +1,6 @@
 var Utils = require('uo-node-utils');
 
 var Converter = function (userOpts) {
-
   this.regexs = {
     declaration: /(^.*{)([\S\s]*?)(})/gm,
     remValue: /(([0-9]|[.])+(\.[0-9][0-9]?)?)(rem)/g
