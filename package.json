@@ -1,6 +1,6 @@
 {
   "name": "rem-to-px-cleanup",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Generate a CSS file only with REM units converted into PX",
   "main": "lib/index.js",
   "repository": {
@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/onaliugo/rem-to-px-cleanup",
   "dependencies": {
+    "cssbeautify": "^0.3.1",
     "uo-node-utils": "^0.1.1"
   }
 }

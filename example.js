@@ -1,4 +1,4 @@
-var Converter = require('./index');
+var Converter = require('./lib/index');
 
 new Converter({
   cssFile: 'example/app.css',
