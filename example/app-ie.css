@@ -1,10 +1,24 @@
-body {
-  font-size: 14px;
+.has-tooltip:before {
+  border-width: 4.66662px 0 4.66662px 4.66662px;
 }
 
-.class {
-  width: 140px;
-  margin: -4.2px;
-  padding: -70px;
-  font-size: 12.6px;
+.Icon--xxl {
+  font-size: 25.2px;
+  line-height: 25.2px;
+}
+
+@media screen and only truc(560px) {
+  .b {
+    display: 70px;
+  }
+}
+
+@-webkit-keyframes spin {
+  0% {
+    width: 14px;
+  }
+
+  100% {
+    width: 28px;
+  }
 }
