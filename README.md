@@ -9,10 +9,14 @@ Create a new stylesheet with **only** rem values converted.
 ```js
 var Converter = require('rem-to-px-cleanup');
 
-new Converter({
+// init Converter
+var converter = new Converter({
   cssFile: 'example/app.css',
   baseFontSize: 14
 });
+
+// trigger convertion
+converter.convert();
 ```
 
 ## Default options
@@ -24,3 +28,5 @@ var defaultOpts = {
   baseFontSize: 16 // number
 }
 ```
+
+**There is also a [Gulp plugin](https://www.npmjs.com/package/gulp-rem-to-px-cleanup) available**
