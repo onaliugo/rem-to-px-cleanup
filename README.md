@@ -1,7 +1,7 @@
 # Cleanup REM to PX
 
 Create a new stylesheet with **only** rem values converted.
-
+*A [Gulp plugin](https://www.npmjs.com/package/gulp-rem-to-px-cleanup) is also available*
 
 
 ## Example
@@ -28,5 +28,3 @@ var defaultOpts = {
   baseFontSize: 16 // number
 }
 ```
-
-**There is also a [Gulp plugin](https://www.npmjs.com/package/gulp-rem-to-px-cleanup) available**
