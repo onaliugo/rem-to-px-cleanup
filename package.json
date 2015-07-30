@@ -20,6 +20,7 @@
   "homepage": "https://github.com/onaliugo/rem-to-px-cleanup",
   "dependencies": {
     "cssbeautify": "^0.3.1",
+    "extend": "^3.0.0",
     "uo-node-utils": "^0.1.1"
   }
 }
