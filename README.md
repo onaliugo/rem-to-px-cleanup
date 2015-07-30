@@ -5,6 +5,22 @@ Create a new stylesheet with **only** rem values converted.
 *A [Gulp plugin](https://www.npmjs.com/package/gulp-rem-to-px-cleanup) is also available*
 
 
+
+## Default options
+
+```js
+var defaultOpts = {
+  src: null,
+  dist: null,
+  format: true,
+  silent: false,
+  baseFontSize: 16,
+  type: 'fs' // 'fs' || 'stream'
+}
+```
+
+
+
 ## Example
 
 ```js
@@ -20,21 +36,6 @@ var converter = new Converter({
 // trigger convertion
 converter.convert();
 ```
-
-## Default options
-
-```js
-var defaultOpts = {
-  src: null,
-  dist: null,
-  format: true,
-  silent: false,
-  baseFontSize: 16,
-  type: 'fs' // 'fs' || 'stream'
-}
-```
-
-## Example
 
 #### Input (app.css)
 
