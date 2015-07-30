@@ -12,7 +12,7 @@ var Converter = require('rem-to-px-cleanup');
 
 // init Converter
 var converter = new Converter({
-  cssFile: 'example/app.css',
+  src: 'example/app.css',
   baseFontSize: 14
 });
 

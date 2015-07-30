@@ -1,6 +1,7 @@
 var Converter = require('./lib/index');
 
 new Converter({
-  cssFile: 'example/app.css',
+  src: 'example/app.css',
+  dist: 'example/app-ie.css',
   baseFontSize: 14
 }).convert();
