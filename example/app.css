@@ -47,6 +47,8 @@
   vertical-align: bottom !important;
 }
 
+// single line comment
+
 .u-push {
   float: right;
 }
@@ -13460,6 +13462,13 @@ hr {
   line-height: 1.5rem;
 }
 
+/*
+
+  Spaced Multi line
+  comment
+
+ */
+
 [data-app-name="home"][data-is-logged="false"] .Navigation {
   position: absolute;
   right: 1.5rem;
@@ -13474,9 +13483,15 @@ hr {
   background: #fff;
 }
 
+// other single line comment
+
 .Table-cell {
   text-align: left;
 }
+
+
+/* Multi line
+comment */
 
 .Table-cell--header {
   text-align: center;
