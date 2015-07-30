@@ -1,0 +1,974 @@
+@charset "UTF-8";
+/*
+
+  Tapestry ♥
+    • Set vars
+    • Load Tapestry
+
+*/
+@import url(/frontend/vendors/bootstrap-datetimepicker/datetimepicker.css);
+
+@import url(/frontend/vendors/fullcalendar/fullcalendar.css);
+
+//single line comment
+.u-pd--xs {
+  padding: 5.25px !important;
+}
+
+.u-pd--s {
+  padding: 10.5px !important;
+}
+
+.u-pd--m {
+  padding: 21px !important;
+}
+
+.u-pd--l {
+  padding: 42px !important;
+}
+
+.u-pd--xl {
+  padding: 84px !important;
+}
+
+.u-mg--xs {
+  margin: 5.25px !important;
+}
+
+.u-mg--s {
+  margin: 10.5px !important;
+}
+
+.u-mg--m {
+  margin: 21px !important;
+}
+
+.u-mg--l {
+  margin: 42px !important;
+}
+
+.u-mg--xl {
+  margin: 84px !important;
+}
+
+.u-pdt--xs {
+  padding-top: 5.25px !important;
+}
+
+.u-pdt--s {
+  padding-top: 10.5px !important;
+}
+
+.u-pdt--m {
+  padding-top: 21px !important;
+}
+
+.u-pdt--l {
+  padding-top: 42px !important;
+}
+
+.u-pdt--xl {
+  padding-top: 84px !important;
+}
+
+.u-mgt--xs {
+  margin-top: 5.25px !important;
+}
+
+.u-mgt--s {
+  margin-top: 10.5px !important;
+}
+
+.u-mgt--m {
+  margin-top: 21px !important;
+}
+
+.u-mgt--l {
+  margin-top: 42px !important;
+}
+
+.u-mgt--xl {
+  margin-top: 84px !important;
+}
+
+.u-pdr--xs {
+  padding-right: 5.25px !important;
+}
+
+.u-pdr--s {
+  padding-right: 10.5px !important;
+}
+
+.u-pdr--m {
+  padding-right: 21px !important;
+}
+
+.u-pdr--l {
+  padding-right: 42px !important;
+}
+
+.u-pdr--xl {
+  padding-right: 84px !important;
+}
+
+.u-mgr--xs {
+  margin-right: 5.25px !important;
+}
+
+.u-mgr--s {
+  margin-right: 10.5px !important;
+}
+
+.u-mgr--m {
+  margin-right: 21px !important;
+}
+
+.u-mgr--l {
+  margin-right: 42px !important;
+}
+
+.u-mgr--xl {
+  margin-right: 84px !important;
+}
+
+.u-pdb--xs {
+  padding-bottom: 5.25px !important;
+}
+
+.u-pdb--s {
+  padding-bottom: 10.5px !important;
+}
+
+.u-pdb--m {
+  padding-bottom: 21px !important;
+}
+
+.u-pdb--l {
+  padding-bottom: 42px !important;
+}
+
+.u-pdb--xl {
+  padding-bottom: 84px !important;
+}
+
+.u-mgb--xs {
+  margin-bottom: 5.25px !important;
+}
+
+.u-mgb--s {
+  margin-bottom: 10.5px !important;
+}
+
+.u-mgb--m {
+  margin-bottom: 21px !important;
+}
+
+.u-mgb--l {
+  margin-bottom: 42px !important;
+}
+
+.u-mgb--xl {
+  margin-bottom: 84px !important;
+}
+
+.u-pdl--xs {
+  padding-left: 5.25px !important;
+}
+
+.u-pdl--s {
+  padding-left: 10.5px !important;
+}
+
+.u-pdl--m {
+  padding-left: 21px !important;
+}
+
+.u-pdl--l {
+  padding-left: 42px !important;
+}
+
+.u-pdl--xl {
+  padding-left: 84px !important;
+}
+
+.u-mgl--xs {
+  margin-left: 5.25px !important;
+}
+
+.u-mgl--s {
+  margin-left: 10.5px !important;
+}
+
+.u-mgl--m {
+  margin-left: 21px !important;
+}
+
+.u-mgl--l {
+  margin-left: 42px !important;
+}
+
+.u-mgl--xl {
+  margin-left: 84px !important;
+}
+
+body {
+  line-height: 21px;
+}
+
+h1,
+h2,
+.Heading-title--1,
+.Heading-title--2 {
+  line-height: 42px;
+}
+
+h2,
+h3,
+h4,
+h5,
+.Heading-title--2,
+.Heading-title--3,
+.Heading-title--4,
+.Heading-title--5 {
+  margin-top: 21px;
+  margin-bottom: 21px;
+}
+
+h3,
+h4,
+h5,
+.Heading-title--3,
+.Heading-title--4,
+.Heading-title--5 {
+  line-height: 21px;
+}
+
+h1,
+.Heading-title--1 {
+  margin-top: 42px;
+  margin-bottom: 42px;
+  font-size: 39.999959999999994px;
+}
+
+h2,
+.Heading-title--2 {
+  font-size: 25.2px;
+}
+
+h3,
+.Heading-title--3 {
+  font-size: 22.400000000000002px;
+}
+
+h4,
+.Heading-title--4 {
+  font-size: 15.86662px;
+}
+
+h5,
+.Heading-title--5 {
+  font-size: 15.000020000000001px;
+}
+
+p,
+.BodyText {
+  margin-top: 21px;
+  margin-bottom: 21px;
+  line-height: 21px;
+}
+
+small,
+.BodyText--smaller {
+  font-size: 12.13338px;
+  line-height: 21px;
+}
+
+.Avatar {
+  width: 31.5px;
+  height: 31.5px;
+  line-height: 31.5px;
+}
+
+.Avatar--s {
+  width: 21px;
+  height: 21px;
+  font-size: 12.13338px;
+  line-height: 21px;
+}
+
+.Avatar--l {
+  width: 42px;
+  height: 42px;
+  font-size: 15.86662px;
+  line-height: 42px;
+}
+
+.Badge {
+  padding: 0 10.5px;
+  font-size: 12.13338px;
+  line-height: 21px;
+  -moz-border-radius: 21px;
+  border-radius: 21px;
+}
+
+.BtnGroup .Btn:first-child {
+  -moz-border-radius-topleft: 3.00006px;
+  border-top-left-radius: 3.00006px;
+  -moz-border-radius-bottomleft: 3.00006px;
+  border-bottom-left-radius: 3.00006px;
+}
+
+.BtnGroup .Btn:last-child {
+  -moz-border-radius-topright: 3.00006px;
+  border-top-right-radius: 3.00006px;
+  -moz-border-radius-bottomright: 3.00006px;
+  border-bottom-right-radius: 3.00006px;
+}
+
+.Collection-item {
+  padding: 10.5px 21px;
+  line-height: 21px;
+}
+
+.Dropdown-selectInput {
+  padding: 9.49998px 40.99998px 9.49998px 9.49998px;
+  font-size: 14px;
+  line-height: 21px;
+  -moz-border-radius: 3.00006px;
+  border-radius: 3.00006px;
+}
+
+.Dropdown-selectInput:after {
+  top: 10.5px;
+  right: 10.5px;
+  font-size: 12.13338px;
+}
+
+.Dropdown-list {
+  min-width: 17px;
+  margin: 5.25px 0;
+  -moz-border-radius: 3.00006px;
+  border-radius: 3.00006px;
+}
+
+.Dropdown-item {
+  margin: 5.25px;
+  padding: 5.25px;
+  font-size: 12.13338px;
+  -moz-border-radius: 3.00006px;
+  border-radius: 3.00006px;
+}
+
+.Dropdown-item[aria-selected="true"]:after,
+.Dropdown-item.is-selected:after {
+  top: 5.25px;
+  right: 10.5px;
+}
+
+.Dropdown-hr {
+  margin: 5.25px 0;
+}
+
+.FormRow {
+  margin-bottom: 21px;
+}
+
+.FormRow .Column {
+  padding-right: 5.25px;
+  padding-left: 5.25px;
+}
+
+.Fieldset {
+  padding: 0 0 10.5px;
+}
+
+.Legend {
+  margin-bottom: 21px;
+  padding-bottom: 5.25px;
+  font-size: 14px;
+}
+
+.Column {
+  font-size: 14px;
+}
+
+@font-face {
+  font-family: "icons";
+  src: url("/frontend/components/tapestry/dist/fonts/icons.woff2#iefix?v=1438182238761") format("woff2"), url("/frontend/components/tapestry/dist/fonts/icons.woff#iefix?v=1438182238761") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.Icon {
+  font-size: 14px;
+}
+
+.Icon--s {
+  font-size: 11.200000000000001px;
+}
+
+.Icon--l {
+  font-size: 15.86662px;
+}
+
+.Icon--xl {
+  font-size: 22.400000000000002px;
+}
+
+.Input,
+.Input-addOn {
+  padding: 9.49998px 10.5px;
+  font-size: 14px;
+  line-height: 21px;
+  -moz-border-radius: 3.00006px;
+  border-radius: 3.00006px;
+}
+
+.Input--inline + .Label {
+  margin-right: 10.5px;
+}
+
+.Input--inline + .Label--inline {
+  margin-left: 5.25px;
+}
+
+.InputGroup-item:last-child {
+  -moz-border-radius-topright: 3.00006px;
+  border-top-right-radius: 3.00006px;
+  -moz-border-radius-bottomright: 3.00006px;
+  border-bottom-right-radius: 3.00006px;
+}
+
+.Btn {
+  padding: 10.5px 21px;
+  font-size: 14px;
+  line-height: 21px;
+  -moz-border-radius: 3.00006px;
+  border-radius: 3.00006px;
+}
+
+.Btn .Icon {
+  line-height: 21px;
+}
+
+.Btn--outline {
+  padding: 9.49998px 19.999979999999997px;
+}
+
+.Btn.has-icon {
+  padding-left: 45.5px;
+}
+
+.Btn.has-icon .Btn-icon {
+  margin: 5.25px 0;
+  padding: 5.25px 10.5px;
+}
+
+.Btn--s {
+  padding: 5.25px 10.5px;
+  font-size: 12.13338px;
+  line-height: 10.5px;
+}
+
+.Btn--squared {
+  width: 42px;
+  padding: 10.5px 0;
+}
+
+.Btn--circle {
+  width: 42px;
+  padding: 10.5px 0;
+}
+
+.Label {
+  margin-bottom: 5.25px;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.Label + .Input--inline {
+  margin-left: 5.25px;
+}
+
+.Media-content {
+  padding: 0 0 0 10.5px;
+}
+
+.Notification {
+  padding: 10.5px 21px;
+  -moz-border-radius: 3.00006px;
+  border-radius: 3.00006px;
+}
+
+.Notification--tc {
+  top: 10.5px;
+}
+
+.Notification--bl {
+  bottom: 10.5px;
+  left: 10.5px;
+}
+
+.Notification--br {
+  right: 10.5px;
+  bottom: 10.5px;
+}
+
+.Panel-header {
+  padding: 0 10.5px;
+  line-height: 42px;
+}
+
+.PanelHeader-button {
+  padding: 0 10.5px;
+  line-height: 42px;
+}
+
+.Panel-content {
+  padding: 21px;
+}
+
+.Panel--vertical {
+  width: 420px;
+}
+
+.Panel--tr:before {
+  right: 420px;
+}
+
+.Panel--tl:before {
+  left: 420px;
+}
+
+.Pellet {
+  width: 10.00006px;
+  height: 10.00006px;
+}
+
+.Switch {
+  width: 50.00002px;
+  height: 21px;
+  -moz-border-radius: 21px;
+  border-radius: 21px;
+}
+
+.Switch:after {
+  left: 3.00006px;
+  width: 15.000020000000001px;
+  height: 15.000020000000001px;
+  margin-top: -7.4999400000000005px;
+  -moz-border-radius: 15.000020000000001px;
+  border-radius: 15.000020000000001px;
+}
+
+input:checked + .Switch:after {
+  left: 31.99994px;
+}
+
+.Switch--s {
+  width: 30.000040000000002px;
+  height: 15.000020000000001px;
+  -moz-border-radius: 15.000020000000001px;
+  border-radius: 15.000020000000001px;
+}
+
+.Switch--s:after {
+  left: 2.00004px;
+  width: 10.99994px;
+  height: 10.99994px;
+  margin-top: -5.50004px;
+  -moz-border-radius: 10.99994px;
+  border-radius: 10.99994px;
+}
+
+input:checked + .Switch--s:after {
+  left: 17.00006px;
+}
+
+.Table-cell {
+  padding: 10.5px 21px;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.Table-head .Table-cell {
+  font-size: 12.13338px;
+}
+
+.Table--actionnable .Table-rowSelector {
+  margin-right: 10.5px;
+}
+
+.Tabs {
+  margin: 0 0 0 -10.5px;
+}
+
+.Tab-item:after {
+  right: 10.5px;
+  left: 10.5px;
+}
+
+.Tab-item:hover:after,
+.Tab-item[aria-selected="true"]:after {
+  height: 3.9999400000000005px;
+}
+
+.Tab-link {
+  padding: 21px 10.5px;
+}
+
+.Tabs--s .Tab-link {
+  padding: 5.25px 10.5px;
+  font-size: 12.13338px;
+}
+
+.Tabs--s .Tab-item:hover:after,
+.Tabs--s .Tab-item[aria-selected="true"]:after,
+.Tabs--s .Tab-item.is-selected:after {
+  height: 2.00004px;
+}
+
+.Textarea {
+  height: 65.00004px;
+  padding: 10.5px;
+  line-height: 21px;
+  -moz-border-radius: 3.00006px;
+  border-radius: 3.00006px;
+}
+
+.has-tooltip:after {
+  margin-right: 4.99996px;
+  padding: 2px 10.5px;
+  font-size: 9.706620000000001px;
+  -moz-border-radius: 3.00006px;
+  border-radius: 3.00006px;
+}
+
+.has-tooltip:before {
+  border-width: 4.99996px 0 4.99996px 4.99996px;
+}
+
+/*
+
+  Old shit
+    • General settings
+    • Colors
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+  font-size: 14px;
+}
+
+.bi-content-box-fixed-height .bi-content-box-holder {
+  height: 336px;
+}
+
+ul,
+ol {
+  margin: 0 0 10.5px 21px;
+}
+
+li {
+  line-height: 21px;
+}
+
+.input-container-h2 {
+  font-size: 22.400000000000002px;
+}
+
+.input-container-h3 {
+  font-size: 15.86662px;
+}
+
+/*
+* Buttons - themes
+*/
+
+/*
+* Buttons - with icon
+*/
+
+/*
+* Buttons - specific
+*/
+
+
+
+.thumbs-list-select li {
+  padding: 10.5px;
+}
+
+.meter-infos {
+  font-size: 14px;
+}
+
+.meter-inline-data .meter-value {
+  font-size: 14px;
+}
+
+.meter-progress-bar .meter-value {
+  font-size: 14px;
+}
+
+.meter-large .meter-label {
+  font-size: 15.86662px;
+}
+
+.meter-large .meter-value {
+  font-size: 11.9px;
+}
+
+.ModalFeatureList-item {
+  padding: 21px;
+}
+
+.ModalFeatureList-itemDescription {
+  margin-top: 5.25px;
+}
+
+p {
+  margin: 0 0 21px;
+}
+
+.feature-title {
+  margin: 21px 0 5.25px;
+}
+
+.feature-alert {
+  width: 63px;
+  padding: 10.5px;
+}
+
+.feature-amount {
+  min-width: 31.5px;
+  margin-right: 21px;
+  padding: 5.25px 10.5px;
+  line-height: 21px;
+}
+
+.feature-trigger-indicator .Icon:before,
+.feature-trigger-indicator .checkmarkInput:before,
+.feature-button .Icon:before,
+.feature-button .checkmarkInput:before {
+  font-size: 15.86662px;
+}
+
+.wiz-time-data {
+  padding: 10.5px;
+}
+
+.wiz-time-data .Icon:before,
+.wiz-time-data .checkmarkInput:before {
+  font-size: 15.86662px;
+}
+
+.wiz-duration .Icon:before,
+.wiz-duration .checkmarkInput:before {
+  font-size: 14px;
+}
+
+.wiz-recap {
+  padding: 21px;
+}
+
+.wiz-title {
+  margin: 0 0 5.25px;
+}
+
+.Avatar--empty:before {
+  line-height: 31.5px;
+}
+
+.ie-placeholder {
+  margin-bottom: 10.5px;
+}
+
+.Checkbox + .Label {
+  margin-left: 5.25px;
+  font-size: 12.13338px;
+}
+
+.Btn--l {
+  padding-top: 10.5px;
+  padding-bottom: 10.5px;
+}
+
+.DateTimePicker-label {
+  right: 10.5px;
+  line-height: 42px;
+}
+
+.Btn--circle.Btn--s {
+  width: 21px;
+  line-height: 21px;
+}
+
+.Label--switch {
+  margin-right: 5.25px;
+}
+
+.Switch + .Input-helper {
+  margin-top: 5.25px;
+}
+
+.Input-addOn--colorSample {
+  height: 42px;
+  -webkit-flex-basis: 42px;
+  -ms-flex-preferred-size: 42px;
+  flex-basis: 42px;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: local("☺︎"), url("/frontend/core/font/proximanova-semibold.woff?v=1438182238761") format("woff"), url("/frontend/core/font/proximanova-semibold.otf?v=1438182238761") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: local("☺︎"), url("/frontend/core/font/proximanova-regular.woff?v=1438182238761") format("woff"), url("/frontend/core/font/proximanova-regular.otf?v=1438182238761") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media all and (max-width: 768px) {
+
+  .btn--xlarge {
+    margin-top: 21px;
+  }
+}
+
+.ui-element {
+  line-height: 42px;
+}
+
+.testimonial-quote {
+  margin: 0 0 21px;
+}
+
+.page-file-view .bi-content-nav {
+  margin: 21px 0 0;
+}
+
+hr {
+  margin: 21px 0;
+}
+
+/*
+
+  Refonte (components & layouts)
+    • input
+    • Menu
+    • Table
+
+*/
+.ContentWrapper {
+  height: -webkit-calc(100vh - 63px);
+  height: -moz-calc(100vh - 63px);
+  height: calc(100vh - 63px);
+}
+
+.ContentWrapper--welcome {
+  padding-top: 21px;
+}
+
+[data-app-name="home"][data-is-logged="false"] .ContentWrapper--welcome {
+  margin-top: -63px;
+}
+
+.Input--joinWiz {
+  padding: 21px;
+}
+
+.Menu-item {
+  line-height: 21px;
+}
+
+.Menu-itemLink {
+  line-height: 21px;
+}
+
+.Menu-itemIcon {
+  margin-right: 5.25px;
+  line-height: 21px;
+}
+
+.Input-helper {
+  margin-bottom: 5.25px;
+  font-size: 12.13338px;
+}
+
+.Input + .Input-helper {
+  margin-bottom: 10.5px;
+}
+
+.Topbar {
+  height: 63px;
+  padding: 10.5px 21px;
+}
+
+.WizTitle {
+  font-size: 14px;
+}
+
+.Navigation {
+  margin: 10.5px 0 0;
+  line-height: 21px;
+}
+
+.Navigation-wizMenu {
+  font-size: 14px;
+}
+
+.Navigation-menu {
+  font-size: 12.13338px;
+}
+
+.Navigation-mainMenu {
+  margin-left: 21px;
+  padding-left: 21px;
+}
+
+.Navigation-authorName {
+  font-size: 12.13338px;
+}
+
+.Navigation-authorArrow:before,
+.Navigation-authorArrow {
+  font-size: 6.06662px;
+  line-height: 21px;
+}
+
+/*
+
+  Spaced Multi line
+  comment
+
+ */
+[data-app-name="home"][data-is-logged="false"] .Navigation {
+  right: 21px;
+}
+
+.Navigation-btnSignIn {
+  margin-right: 10.5px;
+}
+
+//other single line comment
+
+/* Multi line
+comment */
