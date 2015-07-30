@@ -5,9 +5,7 @@ module.exports = function (data) {
     selecteurs = this.toPx(selecteurs);
     declarations = this.convertRules(declarations);
 
-    if (utils.trim(declarations).length)
-      this.atRules.push(selecteurs + declarations + '\n}');
-
-    return '';
+    if (!utils.trim(declarations).length)
+      return '';
   }.bind(this));
 }
